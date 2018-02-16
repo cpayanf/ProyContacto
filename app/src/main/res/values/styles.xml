@@ -8,4 +8,17 @@
 		<item name="colorAccent">@color/colorAccent</item>
 	</style>
 
+	<style name="Labels" parent="android:TextAppearance">
+		<item name="android:textColor">@color/colorTextPrimary</item>
+		<item name="android:textSize">18dp</item>
+	</style>
+	<style name="Labels.Big">
+		<item name="android:textSize">32dp</item>
+	</style>
+
+	<style name="Buttons" parent="Widget.AppCompat.Button">
+		<item name="android:background">@color/colorAccent</item>
+		<item name = "android:textColor">@color/colorTextAccent</item>
+	</style>
+
 </resources>

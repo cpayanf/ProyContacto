@@ -1,18 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+<android.support.constraint.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
 	tools:context="com.coursera.cpayanf.proycontacto.MainActivity">
 
-	<TextView
-		android:layout_width="wrap_content"
+	<EditText
+		android:id="@+id/txtNombre"
+		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:text="Hello World!"
+		android:layout_marginLeft="@dimen/margin"
+		android:layout_marginRight="@dimen/margin"
+		android:layout_marginTop="@dimen/margin"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		android:ems="10"
+		android:inputType="textPersonName"
+		android:paddingLeft="@dimen/padding"
+		android:paddingRight="@dimen/padding"
+		android:text="@string/ttpNombre"
+		tools:layout_editor_absoluteX="84dp"
+		tools:layout_editor_absoluteY="6dp" />
+
+	<DatePicker
+		android:id="@+id/dtpFechaNacimiento"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/margin"
+		android:layout_marginRight="@dimen/margin"
+		app:layout_constraintTop_toBottomOf="@id/txtNombre"
+		app:layout_constraintStart_toStartOf="parent"
+		android:calendarViewShown="false"
+		android:contentDescription="hola"
+		android:datePickerMode="spinner"
+		android:tooltipText="tool" />
+
+	<EditText
+		android:id="@+id/txtTelefono"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/margin"
+		android:layout_marginRight="@dimen/margin"
+		app:layout_constraintTop_toBottomOf="@id/dtpFechaNacimiento"
+		app:layout_constraintStart_toStartOf="parent"
+		android:ems="10"
+		android:inputType="textPersonName"
+		android:paddingLeft="@dimen/padding"
+		android:paddingRight="@dimen/padding"
+		android:text="@string/ttpTelefono"
+		tools:layout_editor_absoluteX="84dp"
+		tools:layout_editor_absoluteY="6dp" />
+
+	<EditText
+		android:id="@+id/txtEmail"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/margin"
+		android:layout_marginRight="@dimen/margin"
+		app:layout_constraintTop_toBottomOf="@id/txtTelefono"
+		app:layout_constraintStart_toStartOf="parent"
+		android:ems="10"
+		android:inputType="textEmailAddress"
+		android:paddingLeft="@dimen/padding"
+		android:paddingRight="@dimen/padding"
+		android:text="@string/ttpEmail"
+		tools:layout_editor_absoluteX="84dp"
+		tools:layout_editor_absoluteY="6dp" />
+
+	<TextView
+		android:id="@+id/lblDescripcion"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/margin"
+		android:layout_marginRight="@dimen/margin"
+		app:layout_constraintTop_toBottomOf="@id/txtEmail"
+		app:layout_constraintStart_toStartOf="parent"
+		android:paddingLeft="@dimen/padding"
+		android:paddingRight="@dimen/padding"
+		android:text="@string/lblDescripcionContacto"
+		android:textAppearance="@style/Labels" />
+
+	<EditText
+		android:id="@+id/txtDescripcion"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/margin"
+		android:layout_marginRight="@dimen/margin"
+		app:layout_constraintTop_toBottomOf="@id/lblDescripcion"
+		app:layout_constraintStart_toStartOf="parent"
+		android:ems="10"
+		android:inputType="textImeMultiLine"
+		android:paddingLeft="@dimen/padding"
+		android:paddingRight="@dimen/padding"
+		android:text=""
+		tools:layout_editor_absoluteX="84dp"
+		tools:layout_editor_absoluteY="6dp" />
+
+	<Button
+		android:id="@+id/btnSiguiente"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		style="@style/Buttons"
+		android:text="@string/btnSiguiente"
 		app:layout_constraintBottom_toBottomOf="parent"
-		app:layout_constraintLeft_toLeftOf="parent"
-		app:layout_constraintRight_toRightOf="parent"
-		app:layout_constraintTop_toTopOf="parent" />
+		app:layout_constraintStart_toStartOf="parent"
+		tools:layout_editor_absoluteX="9dp"
+		tools:layout_editor_absoluteY="496dp" />
 
 </android.support.constraint.ConstraintLayout>

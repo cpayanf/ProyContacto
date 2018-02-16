@@ -1,3 +1,14 @@
 <resources>
-	<string name="app_name">ProyContacto</string>
+	<string name="app_name">Alta Contacto</string>
+	<string name="ttpNombre">Nombre Completo</string>
+	<string name="ttpTelefono">Teléfono</string>
+	<string name="ttpEmail">Email</string>
+	<string name="lblFecNac">Fecha Nacimiento:</string>
+	<string name="lblConfirmarDatos">Confirmar Datos</string>
+	<string name="lblTel">Tel.</string>
+	<string name="lblEmail">Email:</string>
+	<string name="lblDescripcionContacto">Descripción Contacto</string>
+	<string name="lblDescripcion">Descripción:</string>
+	<string name="btnSiguiente">Siguiente</string>
+	<string name="btnEditar">Editar Datos</string>
 </resources>

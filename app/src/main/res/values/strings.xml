@@ -7,8 +7,9 @@
 	<string name="lblConfirmarDatos">Confirmar Datos</string>
 	<string name="lblTel">Tel.</string>
 	<string name="lblEmail">Email:</string>
-	<string name="lblDescripcionContacto">Descripción Contacto</string>
+	<string name="ttpDescripcionContacto">Descripción Contacto</string>
 	<string name="lblDescripcion">Descripción:</string>
 	<string name="btnSiguiente">Siguiente</string>
 	<string name="btnEditar">Editar Datos</string>
+	<string name="MainActCreateErr">No se obtienen datos anteriores</string>
 </resources>

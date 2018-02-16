@@ -4,6 +4,7 @@
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
+	android:background="@android:color/darker_gray"
 	tools:context="com.coursera.cpayanf.proycontacto.ConfirmationActivity">
 
 	<TextView
@@ -111,16 +112,18 @@
 		android:layout_marginLeft="@dimen/margin"
 		android:layout_marginRight="@dimen/margin"
 		android:textAppearance="@style/Labels"/>
+
 	<TextView
 		android:id="@+id/lblValDescripcion"
-		android:layout_width="wrap_content"
+		android:layout_width="0dp"
 		android:layout_height="wrap_content"
-		android:text="Descripcion"
-		app:layout_constraintStart_toEndOf="@id/lblDescripcion"
-		app:layout_constraintTop_toTopOf="@id/lblDescripcion"
 		android:layout_marginLeft="@dimen/margin"
 		android:layout_marginRight="@dimen/margin"
-		android:textAppearance="@style/Labels"/>
+		android:text="Descripcion"
+		android:textAppearance="@style/Labels"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toEndOf="@id/lblDescripcion"
+		app:layout_constraintTop_toTopOf="@id/lblDescripcion" />
 
 	<Button
 		android:id="@+id/btnEditar"
@@ -130,8 +133,9 @@
 		android:paddingRight="@dimen/btnpadding"
 		android:paddingLeft="@dimen/btnpadding"
 		android:text="@string/btnEditar"
+		style="@style/Buttons"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintHorizontal_bias="0.5"
 		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toBottomOf="@id/lblDescripcion" />
+		app:layout_constraintTop_toBottomOf="@id/lblValDescripcion" />
 </android.support.constraint.ConstraintLayout>
